@@ -13,6 +13,7 @@ const defaultEnhancers = []
 
 const createStore = ({
   initialState = {},
+  connectedReducers = null,
   reducers = {},
   middleware = [],
   enhancers = [],
@@ -29,7 +30,7 @@ const createStore = ({
   ]
 
   const store = reduxCreateStore(
-    combineReducers(reducers),
+    connectedReducers !== null ? connectedReducers : combineReducers(reducers),
     initialState,
     compose(
       applyMiddleware(...finalMiddleware),
