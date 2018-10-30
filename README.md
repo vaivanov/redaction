@@ -159,6 +159,7 @@ export default connect({
 
 - [Plain](https://github.com/pavelivanov/redaction/tree/master/docs/Plain.md)
 - [Immutable](https://github.com/pavelivanov/redaction/tree/master/docs/Immutable.md)
+- [Connected react router v4](https://github.com/pavelivanov/redaction/tree/master/docs/ConnectedRouter.md)
 
 ## Notice
 
